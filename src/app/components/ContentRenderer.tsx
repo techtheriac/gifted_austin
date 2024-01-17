@@ -49,19 +49,6 @@ const getParagraphArray = getContent(PARAGRAPH_PATH);
 const getElementType = getContent(ELEMENT_TYPE_PATH);
 const paragraphHasChildren = elementHasChildren(PARAGRAPH_PATH);
 
-const parseParagraph = (elementObject, index: number) => {
-  if (!paragraphHasChildren(elementObject)) {
-    return <p key={index}>{getParagraphContent(elementObject)}</p>;
-  } else {
-    const paragraphArray = getParagraphArray(elementObject);
-    const paragraphChildren = Map(parsePregnantParagraph, paragraphArray);
-    const PregnantParagraph = (
-      <p key={index}>{Map((x) => x, paragraphChildren)}</p>
-    );
-    return PregnantParagraph;
-  }
-};
-
 const parsePregnantParagraph = (contentObject, index: number) => {
   if (contentObject.href !== null) {
     return (
@@ -74,6 +61,19 @@ const parsePregnantParagraph = (contentObject, index: number) => {
   }
 
   return contentObject.plain_text;
+};
+
+const parseParagraph = (elementObject, index: number) => {
+  if (!paragraphHasChildren(elementObject)) {
+    return <p key={index}>{getParagraphContent(elementObject)}</p>;
+  } else {
+    const paragraphArray = getParagraphArray(elementObject);
+    const paragraphChildren = Map(parsePregnantParagraph, paragraphArray);
+    const PregnantParagraph = (
+      <p key={index}>{Map((x) => x, paragraphChildren)}</p>
+    );
+    return PregnantParagraph;
+  }
 };
 
 const renderProcedure = (elementObject: Content, index: number) => {
