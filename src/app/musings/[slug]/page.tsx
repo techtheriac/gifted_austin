@@ -26,7 +26,11 @@ export default async function Musing({ params }: { params: { slug: string } }) {
     postId: matchedPost.id,
   };
 
-  return <ArticleItem {...articleItem} />;
+  return (
+    <main className="w-100">
+      <ArticleItem {...articleItem} />
+    </main>
+  );
 }
 
 interface ArticleItemProps {
@@ -40,7 +44,7 @@ interface ArticleItemProps {
 
 function ArticleItem(props: ArticleItemProps): React.JSX.Element {
   return (
-    <article className="prose lg:prose-xl text-slate-50 max-w-lg">
+    <article className="prose lg:prose-xl text-slate-50 max-w-lg mx-auto">
       <span>{props.date}</span>
       <h1 className="text-white">{props.title}</h1>
       <ContentRenderer postContent={props.postContent} />

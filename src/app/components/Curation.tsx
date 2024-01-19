@@ -17,11 +17,11 @@ export default function Curation({
 }: CurationProps): React.JSX.Element {
   return (
     <div>
-      <h1>{title}</h1>
+      <h1 className="text-2xl capitalize underline">{title}</h1>
       <ul>
         {posts.map((post) => {
           return (
-            <li key={post.slug}>
+            <li className="hover:underline" key={post.slug}>
               <Link href={parseUrl(post.tags, post.slug)}>{post.title}</Link>
             </li>
           );
