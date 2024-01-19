@@ -7,7 +7,7 @@ To run locally, you first need to clone and install the project with Node.js and
 In terminal, run the following from your desired root folder:
 
 ```sh
-git clone https://github.com/techtheriac/gifted_austin.git
+git clone https://github.com/techtheriac/next-notion-cms-workshop.git
 
 cd gifted_austin
 
@@ -38,6 +38,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - [Notion Documentation](https://developers.notion.com/)
 - [Notion Integrations](https://www.notion.so/my-integrations)
+- [Volta - Node Version Management](https://volta.sh/)
 
 ## Libraries
 
