@@ -1,6 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Notion as A Content Management System
 
-## Getting Started
+## Getting started
+
+To run locally, you first need to clone and install the project with Node.js and npm, and it will need to be a newer version like `node@18.17.0` or higher. You can download Node.js and npm [here](https://nodejs.org).
+
+In terminal, run the following from your desired root folder:
+
+```sh
+git clone https://github.com/techtheriac/gifted_austin.git
+
+cd gifted_austin
+
+npm install
+```
 
 First, run the development server:
 
@@ -16,21 +28,27 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Resources on knowledge gardening
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Digital Gardening Tools and Resources](https://github.com/MaggieAppleton/digital-gardeners)
+- [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)
+- [🌱 My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden/)
 
-## Learn More
+## Tools
 
-To learn more about Next.js, take a look at the following resources:
+- [Notion Documentation](https://developers.notion.com/)
+- [Notion Integrations](https://www.notion.so/my-integrations)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Libraries
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Notion Javascript SDK](https://github.com/makenotion/notion-sdk-js)
+- [Ramda](https://ramdajs.com/)
 
-## Deploy on Vercel
+## Alternatives to Notion
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Obsidian](https://obsidian.md/)
+- [LogSeq](https://logseq.com/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Others
+
+- [Lambda (λ) Calculus For Javascript Developers](https://gist.github.com/techtheriac/d0daa646b45fed7fba7c061bfc3154ee)
